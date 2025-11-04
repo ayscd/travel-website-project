@@ -1,0 +1,52 @@
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px 60px 30px 60px;
+}
+
+    .header-cta-link {
+    margin-top: 380px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header-cta-link:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header-cta-link:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3ms;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/imgs/rio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Google Sans Code", monospace
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');

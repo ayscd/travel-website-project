@@ -1,12 +1,18 @@
+/* GENERAL SETTINGS */
+
 body {
     font-family: "Google Sans Code", monospace
 }
 
 .container {
     max-width: 1400px;
+    min-width: 290px;
     margin: 0 auto;
 }
 
+
+
+/* HEADER SETTINGS */
 
 header {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/imgs/rio.png");
@@ -56,4 +62,84 @@ header .brazil {
     font-weight: 800;
 }
 
+
+
+/* FOOTER SETTINGS */
+
+footer {
+    margin-top: 50px;
+    padding: 45px;
+    background-color: rgba(156, 156, 156, 0.1);
+}
+
+footer .footer {
+    font-size: 13px;
+    font-weight: 100;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    column-gap: 45px
+}
+
+footer .author-infos {
+    display: block;
+    font-size: 13px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 30px
+}
+
+footer a, footer a:active, footer a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.4ms;
+}
+
+
+
+/* FONTS IMPORTED */
+
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+/* RESPONSIVENESS SETTINGS */
+
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 16px;
+    }
+
+    header h2 {
+        font-size: 12px;
+    }
+
+    header a {
+        font-size: 10px;
+    }
+
+    header .brazil {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 905px) {
+    footer .footer {
+        font-size: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 30px;
+        margin-bottom: 45px;
+    }
+
+    footer .author-infos {
+        font-size: 10px;
+        margin-top: 45px;
+    }
+}
